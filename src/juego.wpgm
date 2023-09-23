@@ -1,5 +1,25 @@
 import tp.*
+import wollok.game.*
+
+object personaje {
+		var property position = game.origin()
+		
+		method image() = "plagecharcter.png"
+		
+		method derecha(){
+			position = position.right(0)
+		}
+}
 
 program juego {
-	tpIntegrador.jugar()
+	
+	game.cellSize(32)
+	game.height(5)
+	game.width(10)
+	
+	game.addVisualCharacter(personaje)
+	
+	keyboard.right().onPressDo{personaje.derecha()}
+	
+	game.start()
 }
