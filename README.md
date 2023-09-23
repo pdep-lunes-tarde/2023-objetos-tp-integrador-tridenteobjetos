@@ -1,8 +1,22 @@
+# Darkest Dungeon
+el juego Darkest Dungeon esta centrado en los combates PvE donde 4 personajes buscando gloria y riquezas, se adentran en los lugares mas inospitos posibles, donde encontraran todo tipo de criaturas y trampas que desafiaran su salud menta y fisica. deberan ir adentrandose cada vez mas profundo en la mazmorra encontrandose con adversidades cada ves mas complejas.
 # Grupo
 
-Nombre: **COMPLETAR ACA**
+Nombre: Tridente
 
-Integrantes: **COMPLETAR ACA**
+Integrantes:
+
+Legajo: 1758744
+
+Nombre: Santiago Agustin Dopazo
+
+Legajo: 1775066
+
+Nombre: Agustin Santiago Coda
+
+Legajo: 1772041
+
+Nombre: Guida Luciano Sebastian
 
 # Consigna TP Integrador
 
