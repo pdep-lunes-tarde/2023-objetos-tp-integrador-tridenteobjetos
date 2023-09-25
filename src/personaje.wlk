@@ -6,5 +6,10 @@ object personaje {
 		
 		method derecha(){
 			position = position.right(0)
+		
 		}
+		method mensajeCombate() = "COMBATE"
+		
+		
 }
+

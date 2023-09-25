@@ -1,5 +1,6 @@
 import personaje.*
 import wollok.game.*
+import enemigo.*
 
 
 program juego {
@@ -9,8 +10,13 @@ program juego {
 	game.width(10)
 	
 	game.addVisualCharacter(personaje)
+	game.addVisualCharacter(enemigo)
 	
 	keyboard.right().onPressDo{personaje.derecha()}
 	
+	//game.whenCollideDo(personaje, {elemento => game.say(personaje,personaje.mensajeCombate())} 
+	
 	game.start()
 }
+
+
