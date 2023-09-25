@@ -1,20 +1,28 @@
 import personaje.*
 import wollok.game.*
 import enemigo.*
+import menuCombate.*
 
 
 program juego {
 	
 	game.cellSize(32)
-	game.height(5)
-	game.width(10)
+	game.height(20)
+	game.width(20)
 	
-	game.addVisualCharacter(personaje)
-	game.addVisualCharacter(enemigo)
+	//game.addVisualCharacter(personaje)
+	game.addVisual(puntero)
 	
-	keyboard.right().onPressDo{personaje.derecha()}
+	keyboard.down().onPressDo{ puntero.abajo() }
+	keyboard.up().onPressDo{ puntero.arriba()}
+	keyboard.left().onPressDo{ puntero.izquierda()}
+	keyboard.right().onPressDo{ puntero.derecha() }
+	keyboard.x().onPressDo{puntero.pulsar()}
 	
-	//game.whenCollideDo(personaje, {elemento => game.say(personaje,personaje.mensajeCombate())} 
+	
+	//keyboard.right().onPressDo{personaje.derecha()}
+	
+	//game.whenCollideDo(personaje, {elemento => game.say(personaje,personaje.mensajeCombate())})
 	
 	game.start()
 }
