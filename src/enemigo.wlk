@@ -5,6 +5,7 @@ import ataques.*
 object enemigo{
 	var property position = game.at(4,0)
 	var property vida = 100
+	var property efectoPorTurno = false
 		
 	method image() = "plagecharcter.png"
 	
@@ -16,11 +17,12 @@ object enemigo{
 		game.say(self, self.vida())
 	}
 	
-	method recibirGolpe(numero){
-		vida = vida - numero
+	method recibirGolpe(potencia){
+		vida = vida - potencia
 		position = position.right(1)
 		game.say(self, self.vida())
 	}
+	
 	
   
 }

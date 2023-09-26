@@ -12,7 +12,7 @@ class Habilidad{
 	
 }
 
-class EfectoGolpe{
+class EfectoFisico{
 	var property potencia
 	
 	method aplicar(objetivo){
@@ -20,4 +20,18 @@ class EfectoGolpe{
 	}
 }
 
-const golpe = new Habilidad(nombre = "Golpe", efecto =   EfectoGolpe(potencia: 20))
+class EfectoVeneno{
+	var property duracion
+	var property damagePorTurno
+	
+	method aplicar(objetivo){
+		objetivo.recibirEfectoDuracion(duracion, damagePorTurno)
+	}
+}
+
+
+const fisico = new EfectoFisico(potencia = 30)
+const golpe = new Habilidad(nombre = "golpe", efecto = fisico)
+
+const veneno = new EfectoVeneno(duracion = 3, damagePorTurno = 10)
+const dagasVeneno = new Habilidad(nombre = "dagasVeneno", efecto = veneno)

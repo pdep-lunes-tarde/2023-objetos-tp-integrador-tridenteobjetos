@@ -4,7 +4,7 @@ import ataques.*
 
 object personaje {
 		var property position = game.origin()
-		var habilidades = [golpe, ]
+		var habilidades = []
 		
 		method image() = "plagecharcter.png"
 		
