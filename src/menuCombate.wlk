@@ -20,24 +20,21 @@ object puntero{
 		position = position.down(1)
 	}
 	
-	method pulsar(){
+	/*method pulsar(){
 		
-		if(position)
-	}	
+		//
+	}	*/
 }
 
 object interfazCombate{
 	var property elementos = []
 	
-	method posicionarAtaques(){
+	method posicionarElementos(){
 		
+		elementos.forEach({ elementos => game.addVisual(elementos) })
 	}
-	method posicionarPersonajes(){
 		
-	}
-	method posicionarEnemigos(){
-		
-	}
+	
 	
 }
 	

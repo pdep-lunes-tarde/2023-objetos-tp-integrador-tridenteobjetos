@@ -10,20 +10,14 @@ program juego {
 	game.height(20)
 	game.width(20)
 	
-	//game.addVisualCharacter(personaje)
-	game.addVisual(puntero)
+	game.addVisual(personaje)
+	game.addVisual(enemigo)
 	
-	keyboard.down().onPressDo{ puntero.abajo() }
-	keyboard.up().onPressDo{ puntero.arriba()}
-	keyboard.left().onPressDo{ puntero.izquierda()}
-	keyboard.right().onPressDo{ puntero.derecha() }
-	keyboard.x().onPressDo{puntero.pulsar()}
-	
-	
-	//keyboard.right().onPressDo{personaje.derecha()}
-	
-	//game.whenCollideDo(personaje, {elemento => game.say(personaje,personaje.mensajeCombate())})
-	
+	//keyboard.down().onPressDo{ puntero.abajo() }
+	//keyboard.up().onPressDo{ puntero.arriba()}
+	keyboard.left().onPressDo{ personaje.izquierda()}
+	keyboard.right().onPressDo{ personaje.derecha()}
+	keyboard.x().onPressDo{personaje.habilidad1()}
 	game.start()
 }
 
