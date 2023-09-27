@@ -3,11 +3,10 @@ import personaje.*
 import ataques.*
 
 object enemigo{
-	var property position = game.at(4,0)
+	var property position = game.at(15,5)
 	var property vida = 100
 	var property efectoPorTurno = false
 		
-	method image() = "plagecharcter.png"
 	
 	method muerto() = vida <= 0
 	
@@ -23,6 +22,9 @@ object enemigo{
 		game.say(self, self.vida())
 	}
 	
+	method recuperarVida (curacion){
+		vida = vida + curacion
+	}
 	
   
 }

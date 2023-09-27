@@ -3,7 +3,8 @@ import enemigo.*
 import ataques.*
 
 object personaje {
-		var property position = game.origin()
+		var property position = game.at(0,5)
+		var property vida = 100
 		var habilidades = []
 		
 		method image() = "plagecharcter.png"
@@ -21,6 +22,10 @@ object personaje {
 			habilidades[indice].aplicarEfecto(objetivo)
 		}
 		
+	method recuperarVida (curacion){
+		vida = vida + curacion
+	}
+	
 		
 		
 }

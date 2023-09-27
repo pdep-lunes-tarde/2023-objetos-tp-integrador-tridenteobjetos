@@ -1,6 +1,7 @@
 import personaje.*
 import wollok.game.*
 import enemigo.*
+import ataques.*
 
 object puntero{
 	var property position = game.origin()
@@ -27,11 +28,11 @@ object puntero{
 }
 
 object interfazCombate{
-	var property elementos = []
+	var property elementos = [golpe,dagasVeneno]
 	
 	method posicionarElementos(){
 		
-		elementos.forEach({ elementos => game.addVisual(elementos) })
+		elementos.forEach({ habilidad => game.addVisual(habilidad) })
 	}
 		
 	
