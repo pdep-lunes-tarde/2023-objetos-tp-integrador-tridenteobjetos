@@ -12,6 +12,9 @@ class Habilidad{
 	method aplicarEfecto(objetivo){
 		efecto.aplicar(objetivo)
 	}
+	method visualizar(){
+	cargarVisuales.cargarEnLista(self)
+	}
 }
 
 class EfectoFisico{

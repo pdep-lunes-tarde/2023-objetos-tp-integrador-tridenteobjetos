@@ -5,7 +5,7 @@ import ataques.*
 object personaje {
 		var property position = game.at(0,5)
 		var property vida = 100
-		//var habilidades = []
+		var habilidades = [golpe,pocionCuracion]
 		
 		method image() = "plagecharcter.png"
 		
@@ -18,9 +18,9 @@ object personaje {
 		
 		}
 		
-		/*method usarHabilidad(indice, objetivo){
-			habilidades[indice].aplicarEfecto(objetivo)
-		}*/
+		method usarHabilidad(indice, objetivo){
+			habilidades[indice].aplicar(objetivo)
+		}
 		
 	method recuperarVida (curacion){
 		vida = vida + curacion

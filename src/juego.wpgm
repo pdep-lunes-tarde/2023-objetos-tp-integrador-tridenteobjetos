@@ -18,7 +18,7 @@ program juego {
 	//keyboard.up().onPressDo{ puntero.arriba()}
 	keyboard.left().onPressDo{ personaje.izquierda()}
 	keyboard.right().onPressDo{ personaje.derecha()}
-	//keyboard.x().onPressDo{personaje.habilidad1()}
+	keyboard.x().onPressDo{personaje.usarHabilidad(1,enemigo)}
 	game.start()
 }
 

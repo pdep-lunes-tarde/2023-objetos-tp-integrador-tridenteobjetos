@@ -6,7 +6,7 @@ object enemigo{
 	var property position = game.at(15,5)
 	var property vida = 100
 	var property efectoPorTurno = false
-		
+	method image() = "plagecharcter.png"	
 	
 	method muerto() = vida <= 0
 	
