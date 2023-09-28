@@ -24,6 +24,7 @@ object enemigo{
 	
 	method recuperarVida (curacion){
 		vida = vida + curacion
+		game.say(self, self.vida())
 	}
 	
   

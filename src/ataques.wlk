@@ -1,18 +1,17 @@
 import personaje.*
 import wollok.game.*
 import enemigo.*
+import cargarVisuales.*
 
 class Habilidad{
 	const property nombre
 	const property efecto
-	const property posicion
+	const property position
+	const property image
 	
-	method image() = "plagecharcter.png"
 	method aplicarEfecto(objetivo){
 		efecto.aplicar(objetivo)
 	}
-	
-	
 }
 
 class EfectoFisico{
@@ -49,22 +48,31 @@ const fisico = new EfectoFisico(potencia = 30)
 const golpe = new Habilidad (
 	nombre = "golpe",
 	efecto = fisico,
-	posicion= game.at(3,0)
-	
+	position = game.at(3,0),
+	image = "14.png"
 )
 
 const dagasVeneno = new Habilidad(
 	nombre = "dagasVeneno", 
 	efecto = veneno,
-	posicion= game.at(1,0)
+	position= game.at(1,0),
+	image = "..."
 )
 const pocionCuracion = new Habilidad (
 	nombre= "pocion de curacion",
 	efecto= curacionPequenia,
-	posicion= game.at(2,0)
+	position = game.at(2,0),
+	image = "16.png"
 )
 const hechizoDeSanacion = new Habilidad (
 	nombre= "hechizo de sanacion",
 	efecto= curacionGrande,
-	posicion= game.at(4,0)
+	position= game.at(4,0),
+	image = "18.png"
 )
+object listaDeHabilidades{
+	
+	method cargarHabilidades(habilidad){
+		cargarVisuales.cargarEnLista(habilidad)
+	}
+}

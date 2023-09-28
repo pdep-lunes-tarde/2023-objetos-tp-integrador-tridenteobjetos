@@ -2,6 +2,8 @@ import personaje.*
 import wollok.game.*
 import enemigo.*
 import menuCombate.*
+import ataques.*
+import cargarVisuales.*
 
 
 program juego {
@@ -10,8 +12,7 @@ program juego {
 	game.height(20)
 	game.width(20)
 	
-	game.addVisual(personaje)
-	game.addVisual(enemigo)
+	cargarVisuales.cargar()
 	
 	//keyboard.down().onPressDo{ puntero.abajo() }
 	//keyboard.up().onPressDo{ puntero.arriba()}
