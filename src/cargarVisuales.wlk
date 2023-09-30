@@ -5,7 +5,7 @@ import menuCombate.*
 import ataques.*
 
 object cargarVisuales{
-	const property items = [personaje,enemigo]
+	const property items = [personaje,enemigo,golpe]
 	
 	method cargarEnLista(objeto){
 		items.add(objeto)
