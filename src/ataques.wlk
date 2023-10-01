@@ -12,9 +12,7 @@ class Habilidad{
 	method aplicarEfecto(objetivo){
 		efecto.aplicar(objetivo)
 	}
-	method visualizar(){
-	cargarVisuales.cargarEnLista(self)
-	}
+		
 }
 
 class EfectoFisico{
@@ -42,6 +40,9 @@ class EfectoCuracion {
 	}
 	
 }
+
+// Habilidades //
+
 const curacionPequenia  = new EfectoCuracion(curacion= 25)
 const curacionGrande = new EfectoCuracion(curacion=100)
 const veneno = new EfectoVeneno(duracion = 3, damagePorTurno = 10)
@@ -52,7 +53,7 @@ const golpe = new Habilidad (
 	nombre = "golpe",
 	efecto = fisico,
 	position = game.at(3,0),
-	image = "14.png"
+	image = "ataqueFisico.png"
 )
 
 const dagasVeneno = new Habilidad(

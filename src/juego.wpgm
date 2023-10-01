@@ -9,16 +9,19 @@ import cargarVisuales.*
 program juego {
 	
 	game.cellSize(32)
-	game.height(20)
+	game.height(15)
 	game.width(20)
 	
 	cargarVisuales.cargar()
+	game.boardGround("background.png")
 	
 	//keyboard.down().onPressDo{ puntero.abajo() }
 	//keyboard.up().onPressDo{ puntero.arriba()}
 	keyboard.left().onPressDo{ personaje.izquierda()}
 	keyboard.right().onPressDo{ personaje.derecha()}
-	keyboard.x().onPressDo{personaje.usarHabilidad(1,enemigo)}
+	keyboard.num1().onPressDo{personaje.usarHabilidad(0,enemigo)}
+	keyboard.num2().onPressDo{personaje.usarHabilidad(1,enemigo)}
+	keyboard.num3().onPressDo{personaje.usarHabilidad(2,enemigo)}
 	game.start()
 }
 
