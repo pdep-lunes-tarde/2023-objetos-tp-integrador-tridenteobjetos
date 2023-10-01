@@ -23,7 +23,7 @@ object personaje {
 		}
 		
 	method recuperarVida (curacion){
-		vida = vida + curacion
+		 vida = vida + curacion
 	}
 	
 		
